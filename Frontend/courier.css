@@ -1,0 +1,38 @@
+.font_style{
+    font-size: medium;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+header{
+    height: 8ch;
+    padding: 0rem 7rem;
+    box-shadow: 1px 3px 15px rgb(114, 93, 93);
+}
+.trackorder_container{
+    height: 90vh;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.35)), url("https://assets.entrepreneur.com/content/3x2/2000/1698678362-ondemand-courier-services-logistics-industry-1023-g1326610830.jpg") no-repeat; 
+    background-position: center center;
+    background-size: cover; 
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 0rem 7rem;   
+}
+.couriertrack_container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.hero{
+    width: auto;
+    height: 23rem;
+    border-radius: 8px;
+}
+.logo{
+    width: auto;
+    height:3rem;
+}
