@@ -9,7 +9,7 @@
 }
 header{
     height: 8ch;
-    padding: 0rem 7rem;
+    padding: 0rem 3rem;
     box-shadow: 1px 3px 15px rgb(114, 93, 93);
 }
 .trackorder_container{
@@ -20,7 +20,7 @@ header{
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 0rem 7rem;   
+    padding: 0rem 3rem;   
 }
 .couriertrack_container{
     display: flex;
@@ -35,4 +35,21 @@ header{
 .logo{
     width: auto;
     height:3rem;
+}
+.air_cargo{
+    font-size: small;
+}
+.servicecard_container{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+   
+}
+.service_container{
+    padding: 0rem 3rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.review_container{
+    padding: 0rem 3rem;
 }
