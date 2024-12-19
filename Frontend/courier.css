@@ -8,9 +8,19 @@
    
 }
 header{
-    height: 8ch;
+    height: 10ch;
+    width: 100%;
+}
+.top_container{
+    height: 3ch;
+    width: 100%;
     padding: 0rem 3rem;
-    box-shadow: 1px 3px 15px rgb(114, 93, 93);
+}
+.bottom_container{
+    height: 7ch;
+    width: 100%;
+    padding: 0rem 3rem;
+    box-shadow: 1px 1px 5px black;
 }
 .trackorder_container{
     height: 90vh;
