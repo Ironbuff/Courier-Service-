@@ -14,12 +14,12 @@ header{
 .top_container{
     height: 3ch;
     width: 100%;
-    padding: 0rem 3rem;
+    padding: 0rem 7rem;
 }
 .bottom_container{
     height: 7ch;
     width: 100%;
-    padding: 0rem 3rem;
+    padding: 0rem 7rem;
     box-shadow: 1px 1px 5px black;
 }
 .trackorder_container{
@@ -30,7 +30,7 @@ header{
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 0rem 3rem;   
+    padding: 0rem 7rem;   
 }
 .couriertrack_container{
     display: flex;
@@ -56,10 +56,58 @@ header{
    
 }
 .service_container{
-    padding: 0rem 3rem;
+    padding: 0rem 7rem;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
 }
 .review_container{
     padding: 0rem 3rem;
+}
+.partners_container{
+    padding: 0rem 7rem;
+}
+.imgpartner_container{
+    display: flex;
+    justify-content: space-between;
+}
+.partners_container{
+    margin-top: 10rem;
+}
+.footer_container{
+    padding: 0rem 7rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+.company_container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+.quicklink_container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+}
+.quicklink_container ul li a{
+    color: black;
+    font-size: small;
+}
+.quicklink_container ul li a i{
+    color: antiquewhite;
+}
+.footersocial_container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+.footericon_conatiner{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+.connect_container{
+    gap: 6rem;
 }
