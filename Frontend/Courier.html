@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,261 +8,359 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="courier.css">
+    <link rel="stylesheet" href="slider.css">
 </head>
+
 <body>
-    <header class="justify-content-between align-items-center ">
-     <div class="top_container d-flex justify-content-between gap-3 align-items-center bg-secondary-subtle">
-        <div class="address_container d-flex gap-3">
-            <div class="email_container d-flex gap-3 align-items-center">
-                <i class="fa-regular fa-envelope text-warning-emphasis"></i>
-            <small>iraka@gmail.com</small>
+    <main class="container-fluid px-0 mx-0">
+
+        <!-- Header section -->
+        <header class="justify-content-between align-items-center ">
+            <div class="top_container d-flex justify-content-between gap-3 align-items-center bg-secondary-subtle">
+                <div class="address_container d-flex gap-3">
+                    <div class="email_container d-flex gap-3 align-items-center">
+                        <i class="fa-regular fa-envelope text-warning-emphasis"></i>
+                        <small>iraka@gmail.com</small>
+                    </div>
+                    <div class="phone_container">
+                        <i class="fa-solid fa-phone text-warning-emphasis"></i>
+                        <small>+977986177820</small>
+                    </div>
+                </div>
+                <div class="socail_container d-flex gap-3">
+                    <i class="fa-brands fa-facebook text-warning-emphasis"></i>
+                    <i class="fa-brands fa-instagram text-warning-emphasis"></i>
+                    <i class="fa-brands fa-twitter text-warning-emphasis"></i>
+                </div>
             </div>
-            <div class="phone_container">
-                <i class="fa-solid fa-phone text-warning-emphasis"></i>
-            <small>+977986177820</small>
+            <div class="bottom_container d-flex justify-content-between bg-info-subtle align-items-center">
+                <!-- top navbar logo box -->
+                <div class="logo_container align-items-center">
+                    <img src="https://dhabrightvision.com/wp-content/uploads/2024/03/cropped-bvisionlogotransparent_1-2-1-300x257.png"
+                        class="logo" style="width: auto; height: 2.5rem;">
+                </div>
+                <!-- nav items container -->
+                <div class="nav_container">
+                    <ul class="list-unstyled d-flex gap-3 text-decoration-none align-items-center fs-6">
+                        <li>
+                            <a href="/" class="text-decoration-none text-black">Home</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-decoration-none text-black">Services</a>
+                        </li>
+                        <li>
+                            <a href="/" class="text-decoration-none text-black">About Us</a>
+                        </li>
+                        <li>
+                            <a href="/" class="text-decoration-none text-black">Contact Us</a>
+                        </li>
+                        <li>
+                            <button class="btn btn-outline-warning ">
+                                Login
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="socail_container d-flex gap-3">
-            <i class="fa-brands fa-facebook text-warning-emphasis"></i>
-            <i class="fa-brands fa-instagram text-warning-emphasis"></i>
-            <i class="fa-brands fa-twitter text-warning-emphasis"></i>
-        </div>
-     </div>
-        <div class="bottom_container d-flex justify-content-between bg-info-subtle align-items-center">
-            <!-- top navbar logo box -->
-        <div class="logo_container align-items-center">
-            <img src="https://dhabrightvision.com/wp-content/uploads/2024/03/cropped-bvisionlogotransparent_1-2-1-300x257.png" class="logo" style="width: auto; height: 2.5rem;">
-        </div>
-        <!-- nav items container -->
-        <div class="nav_container">
-            <ul class="list-unstyled d-flex gap-3 text-decoration-none align-items-center fs-6">
-                <li>
-                    <a href="/" class="text-decoration-none text-black">Home</a>
-                </li>
-                <li>
-                    <a href="" class="text-decoration-none text-black">Services</a>
-                </li>
-                <li>
-                    <a href="/" class="text-decoration-none text-black">About Us</a>
-                </li>
-                <li>
-                    <a href="/" class="text-decoration-none text-black">Contact Us</a>
-                </li>
-                <li>
-                    <button class="btn btn-outline-warning ">
-                        Login 
+        </header>
+
+        <section class="trackorder_container container-fluid">
+            <!-- Image containing track order -->
+            <div class="couriertrack_container">
+                <div class="maincontent_container py-2">
+                    <h1 class="pt-0 mb-3">Track your Shipment</h1>
+                    <h7>Get the status of your shipment quickly. Our online result gives you real-time,<br>
+                        detailed progress as your shipment movement & you can keep a constant eye<br>
+                        on your delivery and view its status at any time.
+                    </h7>
+                </div>
+                <div class="input_container mt-2 d-flex gap-2">
+                    <input type="text" placeholder="Enter courier no eg.123456" size="30px">
+                    <button class="btn btn-warning">
+                        Track Us
                     </button>
-                </li>
-            </ul>
-        </div>
-        </div>
-    </header>
-    <section class="trackorder_container">
-        <!-- Image containing track order -->
-         <div class="couriertrack_container">
-            <div class="maincontent_container">
-                <h1>Track your Shipment</h1>
-                <h7>Get the status of your shipment quickly. Our online result gives you real-time,<br>
-                    detailed progress as your shipment movement & you can keep a constant eye<br>
-                    on your delivery and view its status at any time.
-                </h7>
-            </div>
-            <div class="input_container">
-                <input type="text" placeholder="Enter your courier no eg.123456" size="30px">
-            </div>
-            <div class="btn_container">
-                <button class="btn btn-warning"> 
-                    Track Us 
-                </button>
-            </div>    
-         </div>
-         <div class="image_container">
-            <img src="https://assets.entrepreneur.com/content/3x2/2000/1698678362-ondemand-courier-services-logistics-industry-1023-g1326610830.jpg" class="hero">
-         </div>
-    </section>
-    <section class="service_container">
-        <div class="servicecontent_container">
-            <h2 class="justify-content-center text-center">Our Services</h2>
-            <p class="text-center">We Provide lots of services in courier platform.</p>
-            <div class="container my-4">
-                <div class="row g-4">
-                  <!-- Card 1 -->
-                  <div class="col-md-4 d-flex justify-content-center">
-                    <div class="card h-100" style="width: 18rem;">
-                      <img src="https://www.visiwise.co/blog/wp-content/uploads/2024/06/The-Evolution-and-Importance-of-Airfreight-and-Air-Cargo-in-the-Global-Economy.jpg" 
-                           class="card-img-top" style="height: 200px; object-fit: cover;" alt="Air Cargo">
-                      <div class="card-body bg-info d-flex flex-column text-center">
-                        <h5 class="card-title">Air Cargo</h5>
-                        <p class="flex-grow-1">We are Nepal's best air cargo, offering unmatched speed, reliability, and global connectivity for safe, on-time deliveries.</p>
-                        <a href="#" class="btn btn-warning mt-auto">View More<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 2 -->
-                  <div class="col-md-4 d-flex justify-content-center">
-                    <div class="card h-100" style="width: 18rem;">
-                      <img src="https://www.shutterstock.com/image-photo/online-delivery-service-delivering-food-600nw-2256946655.jpg" 
-                           class="card-img-top" style="height: 200px; object-fit: cover;" alt="Free Pickup">
-                      <div class="card-body bg-info d-flex flex-column text-center">
-                        <h5 class="card-title">Free Pickup</h5>
-                        <p class="flex-grow-1">We are ready to pickup parcel and deliver parcel all around Nepal.</p>
-                        <a href="#" class="btn btn-warning mt-auto">View More<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 3 -->
-                  <div class="col-md-4 d-flex justify-content-center">
-                    <div class="card h-100" style="width: 18rem;">
-                      <img src="https://media.istockphoto.com/id/509278945/photo/delivery-man-knocking-on-the-clients-door.jpg?s=612x612&w=0&k=20&c=ITg8G3-nGW7Za8jXRNFo6a9W2SiuHcDlVhQcTyNYey8=" 
-                           class="card-img-top" style="height: 200px; object-fit: cover;" alt="Door to Door Courier">
-                      <div class="card-body bg-info d-flex flex-column text-center">
-                        <h5 class="card-title">Door to Door Courier</h5>
-                        <p class="flex-grow-1">End-to-end service from pickup at the sender’s location to delivery at the recipient's address.</p>
-                        <a href="#" class="btn btn-warning mt-auto">View More<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>              
-        </div>
-    </section>
-    <section class="customerreview_container">
-        <div class="customerreviewcontent_container ">
-            <div class="review_content text-center py-5">
-                <h3>Testimonials</h3>
-                <h5>Our Customer Reviews</h5>
             </div>
-            <div class="container">
-                <div class="d-flex gap-3 justify-content-center">
-                    <div class="col-lg-4 col-md-6 col-sm-12 bg-info rounded p-3">
-                        <h5 class="primary_container py-3">Fantastic service</h5>
-                        <h6 class="secondary_container">
-                            I've been using The Garuda Express for years now, and they never disappoint! Their service is reliable, and my packages always arrive on time. I highly recommend them to anyone in need of courier services.
-                        </h6>
-                        <div class="star_content d-flex justify-content-between mb-2">
-                            <div class="star_container text-warning">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+            <div class="image_container">
+                <img src="https://assets.entrepreneur.com/content/3x2/2000/1698678362-ondemand-courier-services-logistics-industry-1023-g1326610830.jpg"
+                    class="hero">
+            </div>
+        </section>
+
+        <!-- service Card Section  -->
+        <section class="service_container">
+            <div class="servicecontent_container">
+                <h2 class="justify-content-center text-center mb-0">Our Services</h2>
+                <p class="text-center pt-0 mt-0 mb-5">We Provide lots of services in courier platform.</p>
+
+                <div class="container my-4">
+                    <div class="row g-4">
+                        <!-- Card 1 -->
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class=" bg-light h-100 shadow rounded" style="width: 18rem; overflow: hidden;">
+                                <img src="https://www.visiwise.co/blog/wp-content/uploads/2024/06/The-Evolution-and-Importance-of-Airfreight-and-Air-Cargo-in-the-Global-Economy.jpg"
+                                    class="card-img-top" style="height: 200px; object-fit: cover;" alt="Air Cargo">
+                                <div class="card-body p-3 d-flex flex-column text-center">
+                                    <h5 class="card-title pb-2 pt-3">Air Cargo</h5>
+                                    <small class="flex-grow-1 pb-3 justify-text-center ">We are Nepal's best air cargo,
+                                        offering unmatched speed, reliability, and global connectivity for safe, on-time
+                                        deliveries.</small>
+                                    <a href="#" class="btn btn-primary btn-md m-3">View More &nbsp;<i
+                                            class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                </div>
                             </div>
-                            <div class="customer_container px-3 d-flex">
-                                <img src="https://images.seeklogo.com/logo-png/5/1/fedex-logo-png_seeklogo-53458.png?v=638687223650000000" style="width: auto; height: 2.5rem; border-radius: 50%;">
-                                <div class="customer_information mx-2">
-                                    <small>Upaya<br>Balaju, Kathmandu</small>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class="h-100 bg-light shadow rounded" style="width: 18rem;">
+                                <img src="https://www.shutterstock.com/image-photo/online-delivery-service-delivering-food-600nw-2256946655.jpg"
+                                    class="card-img-top" style="height: 200px; object-fit: cover;" alt="Free Pickup">
+                                <div class="card-body p-3 d-flex flex-column text-center">
+                                    <h5 class="card-title pb-2 pt-3">Free Pickup</h5>
+                                    <small class="flex-grow-1 pb-3 justify-content-center">We are ready to pickup parcel and deliver parcel all around
+                                        Nepal.Anytime you need to deliver something.</small>
+                                    <a href="#" class="btn btn-primary btn-md m-3">View More &nbsp;<i
+                                            class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class="h-100 bg-light shadow rounded" style="width: 18rem;">
+                                <img src="https://media.istockphoto.com/id/509278945/photo/delivery-man-knocking-on-the-clients-door.jpg?s=612x612&w=0&k=20&c=ITg8G3-nGW7Za8jXRNFo6a9W2SiuHcDlVhQcTyNYey8="
+                                    class="card-img-top" style="height: 200px; object-fit: cover;"
+                                    alt="Door to Door Courier">
+                                <div class="card-body p-3 d-flex flex-column text-center">
+                                    <h5 class="card-title pb-2 pt-3">Door to Door Courier</h5>
+                                    <small class="flex-grow-1 pb-3 justify-content-center">End-to-end service from pickup at the sender’s location to
+                                        delivery at the recipient's address.</small>
+                                    <a href="#" class="btn btn-primary btn-md m-3">View More<i
+                                            class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="customerreview_container">
+            <div class="customerreviewcontent_container ">
+                <div class="review_content text-center py-5 mb-3">
+                    <h3>Testimonials</h3>
+                    <h5>Our Customer Reviews</h5>
+                </div>
+                <div class="container">
+                    <div class="d-flex gap-3 justify-content-center">
+                        <div class="col-lg-4 col-md-6 col-sm-12 bg-light rounded p-3">
+                            <h5 class="primary_container py-1">Fantastic service</h5>
+                            <small class="secondary_container">
+                                I've been using The Garuda Express for years now, and they never disappoint! Their
+                                service is reliable, and my packages always arrive on time. I highly recommend them to
+                                anyone in need of courier services.
+                            </small>
+                            <div class="star_content d-flex justify-content-between mb-2 mt-2">
+                                <div class="customer_container px-1 d-flex">
+                                    <img src="https://images.seeklogo.com/logo-png/5/1/fedex-logo-png_seeklogo-53458.png?v=638687223650000000"
+                                        style="width: auto; height: 2.5rem; border-radius: 50%;">
+                                    <div class="customer_information mx-2">
+                                        <small>Upaya<br>Balaju, Kathmandu</small>
+                                    </div>
+                                </div>
+                                <div class="star_container text-warning">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 bg-light rounded p-3">
+                            <h5 class="primary_container py-1">Helping Hands</h5>
+                            <small class="secondary_container">
+                                I run an online business, and The Garuda Express has been instrumental in helping me
+                                deliver products to my customers. Their friendly staff and competitive prices make them
+                                my go-to courier service.
+                            </small>
+                            <div class="star_content d-flex justify-content-between mb-2 mt-2">
+                                <div class="customer_container px-1 d-flex">
+                                    <img src="https://images.seeklogo.com/logo-png/5/1/fedex-logo-png_seeklogo-53458.png?v=638687223650000000"
+                                        style="width: auto; height: 2.5rem; border-radius: 50%;">
+                                    <div class="customer_information mx-2">
+                                        <small>Fedex<br>Sundhara, Kathmandu</small>
+                                    </div>
+                                </div>
+                                <div class="star_container text-warning">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 bg-light rounded p-3">
+                            <h5 class="primary_container py-1">Speed and Efficiency</h5>
+                            <small class="secondary_container">
+                                I needed to send an urgent package across the country, and The Garuda Express Couriers
+                                saved the day! Their speed and efficiency are unmatched, and I'll definitely be using
+                                their services again.
+                            </small>
+                            <div class="star_content d-flex justify-content-between mb-2 mt-2">
+                                <div class="customer_container px-3 d-flex">
+                                    <img src="https://images.seeklogo.com/logo-png/5/1/fedex-logo-png_seeklogo-53458.png?v=638687223650000000"
+                                        style="width: auto; height: 2.5rem; border-radius: 50%;">
+                                    <div class="customer_information mx-2">
+                                        <small>Fedex<br>Chitwan, Kathmandu</small>
+                                    </div>
+                                </div>
+                                <div class="star_container text-warning">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
-            
-                    <div class="col-lg-4 col-md-6 col-sm-12 bg-info rounded p-3">
-                        <h5 class="primary_container py-3">Helping Hands</h5>
-                        <h6 class="secondary_container">
-                            I run an online business, and The Garuda Express has been instrumental in helping me deliver products to my customers. Their friendly staff and competitive prices make them my go-to courier service.
-                        </h6>
-                        <div class="star_content d-flex justify-content-between mb-2">
-                            <div class="star_container text-warning">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="customer_container px-3 d-flex">
-                                <img src="https://images.seeklogo.com/logo-png/5/1/fedex-logo-png_seeklogo-53458.png?v=638687223650000000" style="width: auto; height: 2.5rem; border-radius: 50%;">
-                                <div class="customer_information mx-2">
-                                    <small>Fedex<br>Sundhara, Kathmandu</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="col-lg-4 col-md-6 col-sm-12 bg-info rounded p-3">
-                        <h5 class="primary_container py-3">Speed and Efficiency</h5>
-                        <h6 class="secondary_container">
-                            I needed to send an urgent package across the country, and The Garuda Express Couriers saved the day! Their speed and efficiency are unmatched, and I'll definitely be using their services again.
-                        </h6>
-                        <div class="star_content d-flex justify-content-between mb-2">
-                            <div class="star_container text-warning">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="customer_container px-3 d-flex">
-                                <img src="https://images.seeklogo.com/logo-png/5/1/fedex-logo-png_seeklogo-53458.png?v=638687223650000000" style="width: auto; height: 2.5rem; border-radius: 50%;">
-                                <div class="customer_information mx-2">
-                                    <small>Fedex<br>Chitwan, Kathmandu</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>            
-        </div>
-    </section>
-    <section class="partners_container  justify-content-between">
-        <div class="partnercontent_conatiner text-center mt-5">
-            <h3> Our Trusted Partners</h3>
-        </div>
-        <div class="partnerimg_container gap-3">
-            <div class="d-flex mt-3">
-                <div class="d-flex imgpartner_container gap-5">
-                    <img src="https://upaya.com.np/wp-content/uploads/2023/12/images-4.png" style="width: auto; height: 3.5rem;">
-                    <img src="https://upaya.com.np/wp-content/uploads/2023/09/5b2ba4a688478889918cfff97bdf589538c5b3fd-300x78.webp" style="width: auto; height: 3.5rem;">
-                    <img src="https://upaya.com.np/wp-content/uploads/2023/12/Pathao-logo.jpg" style="width: auto; height: 3.5rem;">
-                    <img src="https://upaya.com.np/wp-content/uploads/2023/12/images-1.png" style="width: auto; height: 3.5rem;">
-                    <img src="https://upaya.com.np/wp-content/uploads/2023/12/1101665486324.png" style="width: auto; height: 4rem;">
-                    <img src="https://upaya.com.np/wp-content/uploads/2023/09/454ae6bf98b1696d936782c05c3e872963350fb2-300x261.webp" style="width: auto; height: 3.5rem;">
-                    <img src="https://upaya.com.np/wp-content/uploads/2023/09/d7e0b8399741369bca4896a1f975bacf148eb492-300x178.webp" style="width: auto; height: 3.5rem;">
                 </div>
             </div>
-        </div>
-        <div class="more_container d-flex justify-content-center align-items-center mt-3">
-            <span class="btn btn-warning ">View More <i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
-        </div>
-    </section>
-    <footer class="footer_container bg-secondary-subtle gap-2">
-        <div class="company_conatiner">
-            <h4>Star Company</h4>
-            <small class="mt-1">Your Trusted Company with Cargo and Other Services.<br>We are reliable and deliver at you doorsteps. </small>
-        </div>
-        <div class="quicklink_container">
-            <h4>Quick Links</h4>
-            <ul class="list-unstyled gap-3">
-                <li>
-                    <a href="#" class="text-decoration-none text-black">Home</a>
-                </li>
-                <li>
-                    <a href="#" class="text-decoration-none">Services</a>
-                </li>
-                <li>
-                    <a href="#" class="text-decoration-none">About Us</a>
-                </li>
-                <li>
-                    <a href="#" class="text-decoration-none">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footersocial_container">
-            <h4>Get In Touch</h4>
-            <div class="footericon_conatiner">
-                <a href="#" class="text-decoration-none text-black gap-2"><i class="fa-solid fa-location-dot"></i> <small> Balaju, Kathmandu</small></a>
-                <a href="#" class="text-decoration-none text-black gap-2"><i class="fa-solid fa-phone"></i> <small> +97798678823</small></a>
-                <a href="#" class="text-decoration-none text-black gap-2"><i class="fa-solid fa-envelope"></i> <small>uterme2u@gmail.com</small></a>
+        </section>
+
+        <section class="partners_container justify-content-between container-fluid">
+            <div class="partnercontent_conatiner text-center mb-4">
+                <h3> Our Trusted Partners</h3>
             </div>
-        </div>
-        <div class="footerconnect_container gap-3">
-            <h4>Connect With Us</h4>
-            <div class="connect_container">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
+
+            <div class="partnerimg_container gap-3 container-fluid px-0 mx-0">
+                <div class="d-flex mt-3 py-2">
+                    <swiper-container class="mySwiper" init="false" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                        <swiper-slide>
+                            <img src="https://upaya.com.np/wp-content/uploads/2023/12/images-4.png"
+                            style="width: auto; height: 3.5rem;">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="https://upaya.com.np/wp-content/uploads/2023/09/c47224bd302ea689b30342f03d6d150ac32c288d-300x120.webp"
+                            style="width: auto; height: 3.5rem;">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="https://upaya.com.np/wp-content/uploads/2023/12/Pathao-logo.jpg"
+ 
+
+                                       style="width: auto; height: 3.5rem;">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="https://upaya.com.np/wp-content/uploads/2023/09/5b2ba4a688478889918cfff97bdf589538c5b3fd-300x78.webp"
+                                        style="width: auto; height: 3.5rem;">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="https://upaya.com.np/wp-content/uploads/2023/12/ade5b9_6db36cbfacff45f9b83ac37b0b48f127mv2-300x182.jpg"
+                                        style="width: auto; height: 3.5rem;">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="https://upaya.com.np/wp-content/uploads/2023/12/download-5.png"
+                                        style="width: auto; height: 3.5rem;">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="https://upaya.com.np/wp-content/uploads/2023/12/images-1.png"
+                                        style="width: auto; height: 3.5rem;">
+                        </swiper-slide>
+                      </swiper-container>
+                </div>
             </div>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+            <div class="more_container d-flex justify-content-center align-items-center mt-4">
+                <span class="btn btn-warning">
+                    View More <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                </span>
+            </div>
+
+        </section>
+
+        <footer class="footer_container bg-secondary-subtle py-5">
+            <div class="company_conatiner">
+                <h6 class="border-bottom border-secondary pb-2">Star Company</h6>
+                <small class="mt-1">Your Trusted Company with Cargo and Other Services.<br>We are reliable and deliver
+                    at you doorsteps. </small>
+            </div>
+            <div class="quicklink_container">
+                <h6 class="border-bottom border-secondary pb-2">Quick Links</h6>
+                <ul class="list-unstyled gap-3">
+                    <li>
+                        <a href="#" class="text-decoration-none text-black">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footersocial_container">
+                <h6 class="border-bottom border-secondary pb-2">Get In Touch</h6>
+                <div class="footericon_conatiner">
+                    <a href="#" class="text-decoration-none text-black gap-2"><i class="fa-solid fa-location-dot"></i>
+                        <small> Balaju, Kathmandu</small></a>
+                    <a href="#" class="text-decoration-none text-black gap-2"><i class="fa-solid fa-phone"></i> <small>
+                            +97798678823</small></a>
+                    <a href="#" class="text-decoration-none text-black gap-2"><i class="fa-solid fa-envelope"></i>
+                        <small>uterme2u@gmail.com</small></a>
+                </div>
+            </div>
+            <div class="footerconnect_container gap-3">
+                <h6 class="border-bottom border-secondary pb-2">Connect With Us</h6>
+                <div class="connect_container d-flex flex-column row-gap-3">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+        <script>
+          const swiperEl = document.querySelector('swiper-container')
+          Object.assign(swiperEl, {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            breakpoints: {
+              "@0.00": {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+              "@0.75": {
+                slidesPerView: 3,
+                spaceBetween: 15,
+              },
+              "@1.00": {
+                slidesPerView: 4,
+                spaceBetween: 15,
+              },
+              "@1.50": {
+                slidesPerView: 5,
+                spaceBetween: 15,
+              },
+            },
+          });
+      
+          swiperEl.initialize();
+        </script>
 </body>
+
 </html>
