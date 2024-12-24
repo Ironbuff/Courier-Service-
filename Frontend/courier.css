@@ -28,7 +28,7 @@ header {
 
 .trackorder_container {
     height: 90vh;
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.35)), url("https://assets.entrepreneur.com/content/3x2/2000/1698678362-ondemand-courier-services-logistics-industry-1023-g1326610830.jpg") no-repeat;
+    background: linear-gradient(45deg, rgba(44, 43, 43, 0.65), rgba(51, 50, 50, 0.35)), url("https://cdn.prod.website-files.com/6209ea9aee1f965d7fce7c19/6549e52943c26955e3fb9516_xpo%20logistics.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
     justify-content: space-between;
@@ -132,4 +132,15 @@ header {
 
 .footerconnect_container .connect_container {
     gap: 2rem;
+}
+input:focus{
+    outline: red;
+}
+input::placeholder{
+    padding: 19px;
+}
+.track_btn:hover{
+    background: none;
+    border: 2px dotted yellowgreen;
+    color: whitesmoke;
 }

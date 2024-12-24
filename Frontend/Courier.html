@@ -67,7 +67,7 @@
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#"> <img src="https://dhabrightvision.com/wp-content/uploads/2024/03/cropped-bvisionlogotransparent_1-2-1-300x257.png"
-                            class="logo" style="width: auto; height: 2.5rem;"></a>
+                            class="logo" id="logo" style="width: auto; height: 2.5rem;"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -94,12 +94,17 @@
                                         </li>
                                         <li><a class="dropdown-item" href="#">Free Delivery</a></li>
                                     </ul>
+                                </li><li class="nav-item">
+                                    <a class="nav-link" href="#">Contact Us</a>
                                 </li>
                             </ul>
                             <form class="d-flex" role="search">
                                 <input class="form-control me-2" type="search" placeholder="Order no" aria-label="Search">
                                 <button class="btn btn-outline-success" type="submit">Track</button>
                             </form>
+                           
+
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -107,22 +112,29 @@
 
         </header>
 
-        <section class="trackorder_container container-fluid">
+        <section class="trackorder_container container-fluid text-light">
             <!-- Image containing track order -->
             <div class="couriertrack_container">
-                <div class="maincontent_container py-2">
-                    <h1 class="pt-0 mb-4">Track your Shipment</h1>
+                <div class="maincontent_container py-2 ">
+                    <h1 class="pt-0 mb-4" id="shipment">Track your Shipment</h1>
                     <h7>Get the status of your shipment quickly. Our online result gives you real-time,<br>
                         detailed progress as your shipment movement & you can keep a constant eye<br>
                         on your delivery and view its status at any time.
                     </h7>
                 </div>
                 <div class="input_container mt-3 d-flex gap-2">
-                    <input type="text" placeholder="Enter courier no eg.123456" size="30px">
-                    <button class="btn btn-warning">
+                    <input type="text" placeholder="Enter courier no eg.123456" class="rounded focus" size="30px" id="input_submit">
+                    <button class="btn btn-warning track_btn" id="btn_submit">
                         Track Us
                     </button>
+                    
+                    
                 </div>
+                <div id="infodiv" class="p-3 bg-success rounded">
+                </div>
+               
+
+
             </div>
             <div class="image_container">
                 <img src="https://assets.entrepreneur.com/content/3x2/2000/1698678362-ondemand-courier-services-logistics-industry-1023-g1326610830.jpg"
@@ -404,6 +416,43 @@
         });
 
         swiperEl.initialize();
+        // tarck id 
+        var btn= document.getElementById("btn_submit");
+        var input= document.getElementById("input_submit");
+        var infodiv= document.getElementById("infodiv");
+        var logo= document.getElementById("logo");
+        var shipment=document.getElementById("shipment");
+        infodiv.style.display='none';
+        btn.addEventListener("click", ()=>{
+            var status='On the way'
+            var trackid = input.value
+            if(trackid == ''){
+                alert('Please enter a valid id.')
+            }
+           else{
+
+               printId(trackid, status)
+           }
+        })
+
+        function printId(trackid, status){
+            infodiv.style.display= 'block';
+            infodiv.innerHTML=`<h5>Status:</h5><p class='text-white' >Your track id is ${trackid}. The Status is ${status}</p>`;
+            btn.disabled= true;
+        }
+ 
+        logo.addEventListener("mouseover",()=>{
+            logo.style.transition = "all 12s ease-in-out";
+            shipment.style.transition = "all 2s ease-in-out";
+            shipment.innerText="Your delivery is on the way.";
+        
+        })
+
+        logo.addEventListener("mouseout",()=>{
+            shipment.style.transition = "all 2s ease-in-out";
+
+            shipment.innerText="Track your shipment"
+        })
     </script>
 </body>
 
