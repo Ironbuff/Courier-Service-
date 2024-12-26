@@ -92,7 +92,6 @@ header {
     padding: 0rem 7rem;
     display: flex;
     justify-content: space-between;
-    margin-top: 5rem;
 }
 
 .company_container {
@@ -133,14 +132,34 @@ header {
 .footerconnect_container .connect_container {
     gap: 2rem;
 }
-input:focus{
+
+input:focus {
     outline: red;
 }
-input::placeholder{
+
+input::placeholder {
     padding: 19px;
 }
-.track_btn:hover{
+
+.track_btn:hover {
     background: none;
     border: 2px dotted yellowgreen;
     color: whitesmoke;
+}
+
+.contact1_container {
+    width: 100%;
+    background: linear-gradient(45deg, rgba(67, 66, 66, 0.3), rgba(71, 69, 69, 0.6)), url("https://cdn.pixabay.com/photo/2022/11/15/11/04/design-7593741_640.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+.form_container{
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+}
+.accordin_container{
+    width: 100%;
+    
 }

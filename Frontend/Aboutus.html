@@ -3,16 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
     <link rel="stylesheet" href="courier.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 
 <body>
-
-    <!-- Header section -->
     <header class="justify-content-between align-items-center ">
 
         <div class="top_container bg-body-tertiary d-flex justify-content-between gap-3 align-items-center">
@@ -111,52 +109,54 @@
         </div>
     </header>
 
-
-    <section class="container-fluid px-0 mx-0 py-5 contact1_container">
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <form class="p-4 border rounded shadow-sm form_container" id="myform">
-                    <div class="mb-3">
-                        <label for="username" class="form-label">User Name:</label>
-                        <input type="text" id="name" class="form-control" placeholder="Enter Name">
+    <section class="container col-12 py-5 accordin_container">
+        <div class="accordion accordin_box container" id="accordionExample" c>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Import Service
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>An import service in the context of logistics,</strong> such as courier or shipping,
+                        refers to the process of transporting goods, packages, or documents from one country to another.
+                        These services handle various stages of the shipment journey, including collection,
+                        transportation, customs clearance, and final delivery. Import services cater to businesses and
+                        individuals, ensuring that international shipments comply with legal and regulatory
+                        requirements.
                     </div>
-                    <div class="mb-3">
-                        <label for="track" class="form-label">Track No:</label>
-                        <input type="text" id="track" class="form-control"  placeholder="eg: 0332">
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Export Service
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>An export service facilitates the shipment of goods, packages, or documents from one country to another. </strong> It includes processes like pickup, transportation, customs clearance, and delivery at the destination. Export services assist with compliance to international trade regulations, documentation, and often offer features like tracking and insurance, ensuring secure and timely delivery of goods across borders.
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label">Gender:</label><br>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" id="male" name="gender">
-                            <label class="form-check-label" for="male">Male</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" id="female" name="gender">
-                            <label class="form-check-label" for="female">Female</label>
-                        </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Free Delivery
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Free delivery is a service</strong> where the seller covers the shipping costs, providing customers with no additional charges for the transportation of goods. It enhances customer satisfaction, encourages purchases, and is often used as a promotional strategy by businesses.
                     </div>
-                    <div class="mb-3">
-                        <label for="password" id="password" class="form-label">Password:</label>
-                        <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" id="email" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="service" class="form-label">Service:</label>
-                        <select class="form-select" id="service">
-                            <option value="import">Import</option>
-                            <option value="export">Export</option>
-                        </select>
-                    </div>
-                    <input type="submit" class="btn btn-warning w-100" value="Contact Us">
-                </form>
+                </div>
             </div>
         </div>
     </section>
-
-
     <footer class="footer_container bg-secondary-subtle py-5">
         <div class="company_conatiner">
             <h6 class="border-bottom border-secondary pb-2">Star Company</h6>
@@ -200,34 +200,10 @@
             </div>
         </div>
     </footer>
-
-    <script>
-
-        var form=document.getElementById("myform");
-        
-       form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent the form from submitting
-
-        const form = event.target;
-        let formData = "";
-
-        for (const element of form.elements) {
-         if (element.name) { // Skip buttons and unnamed inputs
-         formData += `${element.name}: ${element.value}\n`;
-        }
-        }
-        alert("Form Submitted:\n" + formData);
-        });
-
-
-        
-    </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
-
 </body>
+
 </html>
