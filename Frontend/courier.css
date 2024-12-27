@@ -22,7 +22,7 @@ header {
 .bottom_container {
     height: 7ch;
     width: 100%;
-    padding: 0rem 7rem;
+    padding: 0rem 6rem;
     /* box-shadow: 0px 0.5px 10px rgb(213, 213, 213); */
 }
 
@@ -160,6 +160,60 @@ input::placeholder {
     backdrop-filter: blur(10px);
 }
 .accordin_container{
-    width: 100%;
-    
+    background:linear-gradient(60deg, rgba(65, 64, 64, 0.3),rgba(56, 54, 54, 0.7)), url("https://cdn.pixabay.com/photo/2024/04/08/22/31/forest-8684668_960_720.jpg") no-repeat;
+    background-position: center center;
+    background-size:cover;
+    height: 50vh;
 }
+.accordion-item{
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(8px) !important;
+}
+.accordion-button{
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(1px) !important;
+}
+.img_style{
+    background: linear-gradient(45deg, rgba(44, 43, 43, 0.65), rgba(51, 50, 50, 0.35)), url("https://cdn.prod.website-files.com/6209ea9aee1f965d7fce7c19/6549e52943c26955e3fb9516_xpo%20logistics.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.light{
+    padding: 0rem 7rem;
+    align-items: center;
+}
+.c_container{
+    display: flex;
+ }
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .top_container{
+        padding: 0rem 1rem;
+        /* height: 10ch; */
+        /* background: rebeccapurple !important; */
+    }
+    .trackorder_container{
+        font-size: smaller;
+        flex-direction: column;
+    }
+    .hero{
+        width: auto;
+        height: 5rem;
+        border-radius: 12px;
+    }
+    .footer_container {
+        flex-direction: column;
+        row-gap: 4rem;
+    }
+    .c_container{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+}
+
+
+
+/*  */
