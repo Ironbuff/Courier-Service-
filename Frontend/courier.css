@@ -178,13 +178,17 @@ input::placeholder {
     background-position: center center;
     background-size: cover;
 }
-.light{
+.hero_container{
     padding: 0rem 7rem;
     align-items: center;
 }
 .c_container{
     display: flex;
  }
+ .light{
+    padding: 0rem 7rem;
+}
+
 
 
 /* Responsive */
@@ -207,10 +211,14 @@ input::placeholder {
     .footer_container {
         flex-direction: column;
         row-gap: 4rem;
+        width: 100%;
     }
     .c_container{
         flex-direction: column;
         row-gap: 2rem;
+    
+    .adjust{
+        padding-left: 7rem;
     }
 }
 
